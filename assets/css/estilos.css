@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.alert{
+    opacity: 1;
+    transition: 3s;
+}
+
+.fade{
+    opacity: 0;
+    transition: 1s;
+}
+
+.icono{
+    max-width: 50px;
+    width: 30px;
+}
+
+main{
+    position: fixed;
+    top: 10vh;
+}
+
+.container{
+    background-color: rgba(255, 255, 255, 0.3);
+    height: 90%;
+    backdrop-filter: blur(20px);
+    color: white !important;
+    border-radius: 5px;
+    border: solid 1px rgba(255,255,255,0.5);
+    margin: auto;
+    min-height: fit-content;
+    padding: 2rem 3em;
+    box-shadow: 0 10px 20px 5px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.form-control{
+    border-top-right-radius: 5px !important;
+    border-top-left-radius: 5px !important;
+}
+
+.container:hover{
+    box-shadow: 0 10px 20px 5px rgba(0,0,0,0.5);
+}
+
+#video{
+    position: fixed;
+    top: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+.btn-primary{
+    background-color: rgba(255,255,255,0.3);
+    backdrop-filter: blur(20px);
+    border: 1px solid white;
+    border-bottom-right-radius: 5px !important;
+    border-top-right-radius: 5px !important;
+}
+
+.gap{
+    column-gap: 20px;
+}
+
+.Thunderstorm{
+    background-color: rgba(61, 65, 73, 0.5);
+}
+
+.Drizzle{
+    background-color: rgba(29, 29, 152, 0.3);
+}
+
+.Rain{
+    background-color: rgba(61, 65, 73, 0.5);
+}
+
+.Snow{
+    background-color: rgba(66, 66, 66, 0.3);
+}
+
+.Mist{
+    background-color: rgba(100, 100, 100, 0.3);
+}
+
+.Smoke{
+    background-color: rgba(61, 65, 73, 0.8);
+}
+
+.Haze{
+    background-color: rgba(61, 65, 73, 0.8);
+}
+
+.Dust{
+    background-color: rgba(61, 65, 73, 0.8);
+}
+
+.Fog{
+    background-color: rgba(100, 100, 100, 0.3);
+}
+
+.Sand{
+    background-color: rgba(120, 130, 0, 0.3);
+}
+
+.Ash{
+    background-color: rgba(61, 65, 73, 0.8);
+}
+
+.Squall{
+    background-color: rgba(61, 65, 73, 0.5);
+}
+
+.Tornado{
+    background-color: rgba(61, 65, 73, 0.8);
+}
+
+.Clear{
+    background-color: rgba(67, 112, 218, 0.3);
+}
+
+.Clouds{
+    background-color: rgba(41, 109, 43, 0.3);
+}
+
+@media (min-width: 1200px) {
+    .row{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
+
+@media (max-width: 1199px) {
+    .row{
+        display: flex;
+        /*flex-direction: column-reverse;*/
+    }
+
+    main{
+        position: absolute;
+    }
+
+    li{
+        font-size: 1.2rem;
+    }
+
+    main{
+        top: 0;
+    }
+
+    #video{
+        height: 100%;
+    }
+
+    .col-md-12 .row{
+        flex-direction: column-reverse;
+        row-gap: 3rem;
+    }
+
+    #ciudad{
+        margin: 2rem 0;
+    }
+
+    #form-ciudad{
+        margin-top: 3rem;
+    }
+}
+
+@media (max-height: 800px) {
+    main{
+        position: absolute;
+    }
+
+    img{
+        max-width: 100px;
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+}

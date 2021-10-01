@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/imgs/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/imgs/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/imgs/favicon-16x16.png">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/estilos.css">
+    <title>Matías Bubello, PWA</title>
+</head>
+<body>
+<video autoplay muted loop id="video">
+    <source src="assets/videos/rain.webm" type="video/webm">
+</video>
+    <main>
+        <div class="container">
+            <h1 class="text-center h1"><img src="assets/imgs/logo-desktop.png" alt="Logo aclimatados"> Aclimatado</h1>
+            <div class="row">
+                <div class="col-md-12" id="mensajes">
+                    <form id="form-ciudad">
+                        <label for="buscar">Buscar una ciudad</label>
+                        <div class="input-group">
+                            <input class="form-control" type="text" id="buscar" name="buscar" placeholder="Ingrese el nombre de una ciudad">
+                            <div class="input-group-prepend">
+                                <button id="enviar" type="button" class="btn btn-primary">Buscar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-12" id="resultados">
+                        <h2 id="ciudad" class="my-md-2 my-md-3">Ciudad de: </h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3>Hoy</h3>
+                            <ul>
+                                <li id="lluvia">Probabilidad de lluvia: </li>
+                                <li id="description">Descripción para el día de hoy: </li>
+                                <li id="max">Temperatura máxima: </li>
+                                <li id="min">Temperatura mínima: </li>
+                                <li id="speed">Velocidad del viento: </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h3>Ahora</h3>
+                            <ul>
+                                <li>
+                                    <ul class="gap flex-row">
+                                        <li class="d-inline" id="t"><span class="sr-only">Temperatura actual:</span> </li>
+                                        <li class="d-inline" id="st"><span class="sr-only">Sensación Térmica:</span> </li>
+                                    </ul>
+                                </li>
+                                <li id="hPa">Presión Atmosférica: </li>
+                                <li id="humedad">Humedad: </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+<script src="assets/js/api.js"></script>
+</body>
+</html>
