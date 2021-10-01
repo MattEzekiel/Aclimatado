@@ -16,7 +16,7 @@ if(localStorage.getItem('json') !== null){
  * @type {string}
  */
 const API_KEY = "9d5daa90430e309a5143ebb868d0de95";
-let API = `http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&APPID=${API_KEY}&lang=es`;
+let API = `https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&APPID=${API_KEY}&lang=es`;
 let button = document.getElementById('enviar');
 let inputElement = document.getElementById('buscar');
 

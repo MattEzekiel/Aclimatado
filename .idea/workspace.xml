@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="510fb1f8-cef1-4e1e-ac27-24b6726ea091" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/assets/imgs/iconos/viento.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/videos/clouds.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/assets/videos/clouds.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/videos/drizzle.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/assets/videos/drizzle.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/videos/fog.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/assets/videos/fog.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/videos/sand.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/assets/videos/sand.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/videos/smoke.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/assets/videos/smoke.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/videos/snow.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/assets/videos/snow.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/videos/thunders.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/assets/videos/thunders.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/videos/tornado.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/assets/videos/tornado.mp4" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +60,8 @@
       <workItem from="1632865831331" duration="13314000" />
       <workItem from="1633047646560" duration="7339000" />
       <workItem from="1633096227650" duration="19644000" />
+      <workItem from="1633123948093" duration="16000" />
+      <workItem from="1633124071976" duration="5000" />
     </task>
     <servers />
   </component>
@@ -84,6 +78,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
