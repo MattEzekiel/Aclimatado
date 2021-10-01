@@ -9,7 +9,9 @@ if(localStorage.getItem('json') !== null){
     localSeatch();
 }else{
     ciudad = "Buenos%20Aires";
-    /*theApi();*/
+    setTimeout(function () {
+        theApi();
+    },1)
 }
 /**
  * Constantes y detección del onclick
@@ -188,7 +190,7 @@ function tempMinima(temp,grados) {
 function searchCity(valor) {
     ciudad = valor.replace(/ /g, "%20");
     /*console.log(ciudad);*/
-    let API = `http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&APPID=${API_KEY}&lang=es`;
+    let API = `https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&APPID=${API_KEY}&lang=es`;
     fetch(API)
         .then(function (respuesta) {
             return respuesta.json();

@@ -38,6 +38,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -61,7 +62,7 @@
       <workItem from="1633047646560" duration="7339000" />
       <workItem from="1633096227650" duration="19644000" />
       <workItem from="1633123948093" duration="16000" />
-      <workItem from="1633124071976" duration="5000" />
+      <workItem from="1633124071976" duration="297000" />
     </task>
     <servers />
   </component>
@@ -79,6 +80,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
