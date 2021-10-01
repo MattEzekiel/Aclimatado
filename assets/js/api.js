@@ -21,6 +21,8 @@ const API_KEY = "9d5daa90430e309a5143ebb868d0de95";
 let API = `https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&APPID=${API_KEY}&lang=es`;
 let button = document.getElementById('enviar');
 let inputElement = document.getElementById('buscar');
+const API_MAP = "VdG5atGNMvYhSaLSAAVGzE9ntKwjQTAo";
+const API_MAPA = `https://api.tomtom.com/map/1/style/metadata.xml?key=${API_MAP}`;
 
 /**
  * Evento click
@@ -45,6 +47,7 @@ function theApi() {
             main(elJason.main);
             weather(elJason.weather);
             viento(elJason.wind);
+            coordenadas(elJason.coord);
             if(localStorage.getItem('ciudad') !== null){
                 city(localStorage.getItem('ciudad'));
             }else{
@@ -196,7 +199,7 @@ function searchCity(valor) {
             return respuesta.json();
         })
         .then(function (elJason) {
-            /*console.log("El objeto",elJason);*/
+            console.log("El objeto",elJason);
             if (elJason.cod === "404"){
                 /*alert('entré');*/
                 errorMensaje();
@@ -206,6 +209,7 @@ function searchCity(valor) {
                 weather(elJason.weather);
                 viento(elJason.wind);
                 city(valor);
+                coordenadas(elJason.coord);
                 localStorage.clear();
                 localStorage.setItem('json',JSON.stringify(elJason));
                 localStorage.setItem('ciudad',ciudad);
@@ -256,6 +260,7 @@ function localSeatch() {
     weather(elstorage.weather);
     viento(elstorage.wind);
     city(valor);
+    coordenadas(elstorage.coord);
     /*console.log('Activado local search');*/
 }
 
@@ -369,4 +374,18 @@ function fondo(main) {
 function colorFondo(tipo) {
     let container = document.getElementsByClassName('container')[0];
     container.setAttribute('class','container '+tipo);
+}
+
+/**
+ * Función cordendas
+ * @param coords coordendas
+ */
+function coordenadas(coords) {
+    let array = [coords.lon, coords.lat];
+    var map = tt.map({
+        key: "VdG5atGNMvYhSaLSAAVGzE9ntKwjQTAo",
+        container: "mapa",
+        center: array,
+        zoom: 5,
+    });
 }
